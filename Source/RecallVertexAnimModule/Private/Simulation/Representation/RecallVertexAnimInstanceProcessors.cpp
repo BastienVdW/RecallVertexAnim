@@ -21,8 +21,8 @@ URecallVertexAnimInstanceInitializer::URecallVertexAnimInstanceInitializer()
 	: EntityQuery(*this)
 {
 	ExecutionFlags = static_cast<int32>(EProcessorExecutionFlags::All);
-	ObservedType = FRecallVertexAnimInstanceFragment::StaticStruct();
-	Operation = EMassObservedOperation::Add;
+	ObservedTypes.Add(FRecallVertexAnimInstanceFragment::StaticStruct());
+	ObservedOperations = EMassObservedOperationFlags::Add;
 }
 
 void URecallVertexAnimInstanceInitializer::InitializeInternal(UObject& Owner, const TSharedRef<FMassEntityManager>& InEntityManager)
