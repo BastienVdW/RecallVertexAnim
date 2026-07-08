@@ -1,0 +1,57 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "Recall Vertex Anim",
+	"Description": "Vertex Animation for Recall",
+	"Category": "Gameplay",
+	"CreatedBy": "Bastien Van de Walle",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"Installed": false,
+	"EnabledByDefault" : false,
+	"Modules": [
+		{
+			"Name": "RecallVertexAnimModule",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "RecallVertexAnimEditor",
+			"Type": "Editor",
+			"LoadingPhase": "PostEngineInit",
+			"AdditionalDependencies": [
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "AnimToTexture",
+			"Enabled": true
+		},
+		{
+			"Name": "Recall",
+			"Enabled": true
+		},
+		{
+			"Name": "RecallGameplay",
+			"Enabled": true
+		},
+		{
+			"Name": "RecallAbility",
+			"Enabled": true
+		},
+		{
+			"Name": "VariableCollection",
+			"Enabled": true
+		},
+		{
+			"Name": "EditorScriptingUtilities",
+			"Enabled": true
+		}
+	]
+}
